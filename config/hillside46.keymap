@@ -51,7 +51,7 @@
   &kp TAB    &kp A   &kp S   &kp D   &kp F    &kp G                                                      &kp H    &kp J   &kp K     &kp L   &kp SEMI        &kp ENTER
 
 
-  &kp LCTRL  &kp Z   &kp X   &kp C   &kp V    &kp B    &kp ESC                                &caps_word &kp N    &kp M   &kp COMMA &kp DOT &mt RCTRL SLASH &kp SQT
+  &kp LCTRL  &kp Z   &kp X   &kp C   &kp V    &kp B    &kp ESC                                &caps_word &kp N    &kp M   &kp COMMA &kp DOT &kp RC(SLASH) &kp SQT
 
                                      &kp LGUI &kp LALT &sk LSHIFT &mo NAV_L         &mo SYM_L &kp SPACE &mo NUM_L &none
                         >;
