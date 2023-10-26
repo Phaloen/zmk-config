@@ -59,16 +59,16 @@
                 russian_layer {
 /* RUS
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   | BKSPC |
- * | TAB   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   Ö   | ENTER |
- * | CTRL  |   Y   |   X   |   C   |   V   |   B   |  ESC  |-------------------| CAPS  |   N   |   M   |   ,   |   .   |   -   |   '   |
+ * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   | BKSPC |йцуке нгшщз хъ
+ * | TAB   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   Ö   | ENTER |фывап ролдж э\
+ * | CTRL  |   Y   |   X   |   C   |   V   |   B   |  ESC  |-------------------| CAPS  |   N   |   M   |   ,   |   .   |   -   |   '   |ячсми тьбю. 
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
  */
                         bindings = <
 &kp GRAVE     &kp Q         &kp W         &kp E         &kp R         &kp T                                                                          &kp Y         &kp U         &kp I         &kp O         &kp P           &kp BSPC
 &kp TAB       &kp A         &kp S         &kp D         &kp F         &kp G                                                                          &kp H         &kp J         &kp K         &kp L         &kp SEMI        &kp ENTER
 &kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp B         &kp ESC                                            &caps_word    &kp N         &kp M         &kp COMMA     &kp DOT       &mt RCTRL SLASH &kp SQT
-                                                        &kp LGUI      &kp LALT      &sk LSHIFT     &mo NAV_L             &mo SYMR_L    &kp SPACE     &mo NUMBER_L  &none
+                                                        &kp LGUI      &kp LALT      &sk LSHIFT     &mo NAV_L             &mo SYM_L     &kp SPACE     &mo NUMBER_L  &none
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -94,15 +94,15 @@
 		
                 symr_layer {
 /* SYMBOLS RUSSIAN
- * -------------------------------------------------------------------------------------------------------------------------------------
- * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   | BSPC  |
- * |       |   Ä   |   ß   |   Ü   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   | END   |
+ * -------------------------------------------------------------------------------------------------------------------------------------^ !"§$% &/()= ?`
+ * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   | BSPC  |Ё !"№; %:?*( )_+
+ * |       |   Ä   |   ß   |   Ü   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   | END   |ё 12345 67890 -=
  * | Ctrl  |   |   |   <   |   >   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&kp  INS      &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  ASTRK    &kp  EXCL     &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
-&none         &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  LPAR     &kp  UNDER    &kp  AT       &kp  CARET    &kp  DOLLAR   &kp END
+&kp  INS      &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  ASTRK    &trans        &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
+&none         &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  LPAR     &kp  UNDER    &trans        &kp  CARET    &kp  DOLLAR   &kp END
 &trans        &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
                                                         &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
                         >;
