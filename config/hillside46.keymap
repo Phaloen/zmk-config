@@ -77,9 +77,9 @@
                 sym_layer {
 /* SYM
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   | BSPC  |
- * |       |   Ä   |   ß   |   Ü   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   | END   |
- * | Ctrl  |   |   |   <   |   >   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
+ * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   | BSPC  |()!?'"%&§$
+ * |       |   Ä   |   ß   |   Ü   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   | END   |*(!_/"%:№;
+ * | Ctrl  |   |   |   <   |   >   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |*(!_/"%:№;(
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
@@ -101,8 +101,8 @@
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&kp  INS      &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  ASTRK    &trans        &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
-&none         &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  LPAR     &kp  UNDER    &trans        &kp  CARET    &kp  DOLLAR   &kp END
+&kp  INS      &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  LPAR     &trans        &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
+&none         &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  RPAR     &kp  UNDER    &trans        &kp  CARET    &kp  DOLLAR   &kp END
 &trans        &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
                                                         &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
                         >;
