@@ -26,13 +26,22 @@
 
 
 / {
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        symr_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
 /* QWERTY
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   z   |   U   |   I   |   O   |   P   | BKSPC |
+ * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   | BKSPC |
  * | TAB   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   Ö   | ENTER |
  * | CTRL  |   Y   |   X   |   C   |   V   |   B   |  ESC  |-------------------|  CAPS |   N   |   M   |   ,   |   .   |   -   |   '   |
  *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  Num  |   -   |
@@ -84,7 +93,7 @@
                 };
 		
                 symr_layer {
-/* SYM
+/* SYMBOLS RUSSIAN
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   | BSPC  |
  * |       |   Ä   |   ß   |   Ü   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   | END   |
@@ -140,13 +149,13 @@
                 adj_layer {
 /* ADJUST
  * -------------------------------------------------------------------------------------------------------------------------------------
- * |       | QWERTY| DVORAK| COLEMK|       |       |-----------------------------------|       |  F11  |  F12  |Prt Scr|EP_OFF | EP_ON |
+ * |       | QWERTY|       |       |RUSSIAN|       |-----------------------------------|       |  F11  |  F12  |Prt Scr|EP_OFF | EP_ON |
  * | RESET | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|       |       |       |       |       | RESET |
  * |       | LGUI  | LALT  | LCTRL | LSHIFT|       |BT CLR |-------------------|       |       |       |OUT_USB|OUT_BLE|       | BOOTL |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
                         bindings = <
-&none         &to  QWERTY_L &to  NUMBER_L &to  RUSSIAN_L &none        &none                                                                             &none             &kp   F11          &kp   F12  &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
+&none         &to  QWERTY_L &none         &none         &to RUSSIAN_L &none                                                                             &none             &kp   F11          &kp   F12  &kp PRINTSCREEN   &ext_power EP_OFF  &ext_power EP_ON
 &sys_reset    &bt  BT_SEL 0 &bt  BT_SEL 1 &bt  BT_SEL 2 &bt  BT_SEL 3 &bt  BT_SEL 4                                                                     &none             &none              &none            &none          &none           &sys_reset
 &none         &kp  LGUI     &kp  LALT     &kp  LCTRL    &kp LSHIFT    &none         &bt BT_CLR                                         &none            &none             &none              &out  OUT_USB    &out  OUT_BLE  &none           &bootloader
                                                         &trans        &trans        &trans        &trans                 &trans        &trans           &trans            &trans 
