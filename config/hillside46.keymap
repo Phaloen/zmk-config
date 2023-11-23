@@ -60,22 +60,14 @@
                 russian_layer {
 /* RUS
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   | BKSPC |
- * | TAB   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   Ö   | ENTER |
- * | CTRL  |   Y   |   X   |   C   |   V   |   B   |  ESC  |-------------------| CAPS  |   N   |   M   |   ,   |   .   |   -   |   '   |
- *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  ALT  |  GUI  |
- */
-
-/* Bulgarisch
- * -------------------------------------------------------------------------------------------------------------------------------------
  * |   Ё   |   Ы   |   У   |   E   |   И   |   Ш   |-----------------------------------|   Щ   |   К   |   С   |   Д   |   З   |   Ц   |
- * |       |       |   Я   |   А   |   О   |   Ж   |-----------------------------------|   Г   |   Т   |   Н   |   В   |   М   |   Ч   |
+ * |   -   |   .   |   Я   |   А   |   О   |   Ж   |-----------------------------------|   Г   |   Т   |   Н   |   В   |   М   |   Ч   |
  * | CTRL  |   Ю   |   Й   |   Ъ   |   Э   |   Ф   | CTRL  |-------------------|  ALT  |   Х   |   П   |   Р   |   Л   |   Б   | ENTER |
  *                                 |  GUI  | BKSPC |SK SHFT|  Nav  |---|  Sym  | SPACE |  Num  |  none |
- */
+ */rrr
                         bindings = <
 &kp GRAVE  &kp  S    &kp  E  &kp  T        &kp  B        &kp  I                                                                         &kp  O        &kp  R        &kp  C        &kp  L        &kp  P           &kp  W
-&kp MINUS  &kp SLASH &kp  Z  &kp  F        &kp  J        &kp  SEMI                                                                      &kp  U        &kp  N        &kp  Y        &kp  D        &kp  V           &kp  Z
+&kp MINUS  &kp SLASH &kp  Z  &kp  F        &kp  J        &kp  SEMI                                                                      &kp  U        &kp  N        &kp  Y        &kp  D        &kp  V           &kp  y
 &kp LCTRL  &kp DOT   &kp  Q  &kp RBKT      &kp  SQT      &kp  A        &kp  LCTRL                                         &kp  LALT     &kp  LBKT     &kp  G        &kp  H        &kp  K        &kp COMMA        &kp  ENTER
                                            &kp  LGUI     &kp  BSPC     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &mo  NUMBER_L &none
                         >;
