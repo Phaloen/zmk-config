@@ -61,14 +61,14 @@
 /* RUS
  * -------------------------------------------------------------------------------------------------------------------------------------
  * |   Ё   |   Ы   |   У   |   E   |   И   |   Ш   |-----------------------------------|   Щ   |   К   |   С   |   Д   |   З   |   Ц   |
- * |   -   |   .   |   Я   |   А   |   О   |   Ж   |-----------------------------------|   Г   |   Т   |   Н   |   В   |   М   |   Ч   |
- * | CTRL  |   Ю   |   Й   |   Ъ   |   Э   |   Ф   | CTRL  |-------------------|  ALT  |   Х   |   П   |   Р   |   Л   |   Б   | ENTER |
+ * |   Ъ   |   .   |   Я   |   А   |   О   |   Ж   |-----------------------------------|   Г   |   Т   |   Н   |   В   |   М   |   Ч   |
+ * | CTRL  |   Ю   |   Й   |   Ь   |   Э   |   Ф   | CTRL  |-------------------|  ALT  |   Х   |   П   |   Р   |   Л   |   Б   | ENTER |
  *                                 |  GUI  | BKSPC |SK SHFT|  Nav  |---|  Sym  | SPACE |  Num  |  none |
  */
                         bindings = <
 &kp GRAVE  &kp  S    &kp  E  &kp  T        &kp  B        &kp  I                                                                         &kp  O        &kp  R        &kp  C        &kp  L        &kp  P           &kp  W
-&kp MINUS  &kp SLASH &kp  Z  &kp  F        &kp  J        &kp  SEMI                                                                      &kp  U        &kp  N        &kp  Y        &kp  D        &kp  V           &kp  X
-&kp LCTRL  &kp DOT   &kp  Q  &kp RBKT      &kp  SQT      &kp  A        &kp  LCTRL                                         &kp  LALT     &kp  LBKT     &kp  G        &kp  H        &kp  K        &kp COMMA        &kp  ENTER
+&kp RBKT   &kp SLASH &kp  Z  &kp  F        &kp  J        &kp  SEMI                                                                      &kp  U        &kp  N        &kp  Y        &kp  D        &kp  V           &kp  X
+&kp LCTRL  &kp DOT   &kp  Q  &kp  M        &kp  SQT      &kp  A        &kp  LCTRL                                         &kp  LALT     &kp  LBKT     &kp  G        &kp  H        &kp  K        &kp COMMA        &kp  ENTER
                                            &kp  LGUI     &kp  BSPC     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &mo  NUMBER_L &none
                         >;
 			
