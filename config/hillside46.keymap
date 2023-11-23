@@ -41,14 +41,6 @@
                 default_layer {
 /* QWERTY
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | `     |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   | BKSPC |
- * | TAB   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   Ö   | ENTER |
- * | CTRL  |   Y   |   X   |   C   |   V   |   B   |  ESC  |-------------------|  CAPS |   N   |   M   |   ,   |   .   |   -   |   '   |
- *                                 |  GUI  |  ALT  |SK SHFT|  Nav  |---|  Sym  | SPACE |  Num  |   -   |
- */
-
-/* QWERTY
- * -------------------------------------------------------------------------------------------------------------------------------------
  * |  ESC  |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   |   Ü   |
  * |   ß   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   Ö   |   Ä   |
  * | CTRL  |   Y   |   X   |   C   |   V   |   B   | CTRL  |-------------------|  ALT  |   N   |   M   |   ,   |   .   |   -   | ENTER |
@@ -82,10 +74,10 @@
  *                                 |  GUI  | BKSPC |SK SHFT|  Nav  |---|  Sym  | SPACE |  Num  |  none |
  */
                         bindings = <
-&kp GRAVE     &kp Q         &kp W         &kp E         &kp R         &kp T                                                                          &kp Y         &kp U         &kp I         &kp O         &kp P           &kp LBKT
-&kp TAB       &kp A         &kp S         &kp D         &kp F         &kp G                                                                          &kp H         &kp J         &kp K         &kp L         &kp SEMI        &kp SQT
-&kp LCTRL     &kp Z         &kp X         &kp C         &kp V         &kp B         &kp LCTRL                                          &kp  LALT     &kp N         &kp M         &kp COMMA     &kp DOT       &mt RCTRL SLASH &kp ENTER
-                                                        &kp LGUI      &kp BSPC      &sk LSHIFT     &mo NAV_L             &mo SYM_L     &kp SPACE     &mo NUMBER_L  &none
+&kp GRAVE  &kp  S    &kp  E  &kp  T        &kp  B        &kp  I                                                                         &kp  O        &kp  R        &kp  C        &kp  L        &kp  P           &kp  W
+&kp MINUS  &kp SLASH &kp  Z  &kp  F        &kp  J        &kp  SEMI                                                                      &kp  U        &kp  N        &kp  Y        &kp  D        &kp  V           &kp  Z
+&kp LCTRL  &kp DOT   &kp  Q  &kp RBKT      &kp  SQT      &kp  A        &kp  LCTRL                                         &kp  LALT     &kp  LBKT     &kp  G        &kp  H        &kp  K        &kp COMMA        &kp  ENTER
+                                           &kp  LGUI     &kp  BSPC     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &mo  NUMBER_L &none
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
