@@ -67,7 +67,7 @@
  */
                         bindings = <
 &kp GRAVE  &kp  S    &kp  E  &kp  T        &kp  B        &kp  I                                                                         &kp  O        &kp  R        &kp  C        &kp  L        &kp  P           &kp  W
-&kp MINUS  &kp SLASH &kp  Z  &kp  F        &kp  J        &kp  SEMI                                                                      &kp  U        &kp  N        &kp  Y        &kp  D        &kp  V           &kp  Y
+&kp MINUS  &kp SLASH &kp  Z  &kp  F        &kp  J        &kp  SEMI                                                                      &kp  U        &kp  N        &kp  Y        &kp  D        &kp  V           &kp  X
 &kp LCTRL  &kp DOT   &kp  Q  &kp RBKT      &kp  SQT      &kp  A        &kp  LCTRL                                         &kp  LALT     &kp  LBKT     &kp  G        &kp  H        &kp  K        &kp COMMA        &kp  ENTER
                                            &kp  LGUI     &kp  BSPC     &sk  LSHIFT    &mo  NAV_L            &mo  SYM_L    &kp  SPACE    &mo  NUMBER_L &none
                         >;
