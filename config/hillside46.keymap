@@ -151,14 +151,14 @@
 /* NAV   
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | Copy  |       | HOME  |  Up   |  END  |       |-----------------------------------|   6   |   7   |   8   |   9   |   0   | BSPC  |
- * | Cut   |  TAB  | Left  | Down  | Right | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
- * | Ctrl  |  F1   |  F2   | Copy  | Paste |  UnDo |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Ctrl  |
+ * | TAB   | CTRL  | Left  | Down  | Right | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
+ * | Ctrl  | SHIFT |  Cut  | Copy  | Paste |  UnDo |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Ctrl  |
  *                                 |       |       |       |       |---| ADJ_L |       |       |       |
  */
                         bindings = <
 &kp  Copy     &kp  HOME     &kp  HOME     &kp  UP       &kp  END      &kp  N5                                                                        &kp   N6      &kp   N7      &kp   N8      &kp   N9      &kp  N0       &trans
-&kp  Cut      &kp  TAB      &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp  Paste                                                                     &kp   PG_UP   &kp  LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp PG_DN
-&kp  LCTRL    &kp  Redo     &kp  Cut      &kp  Copy     &kp  Paste    &kp  Undo     &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &kp RCTRL
+&kp  TAB      &kp  LCTRL    &kp  LEFT     &kp  DOWN     &kp  RIGHT    &kp  Paste                                                                     &kp   PG_UP   &kp  LEFT    &kp   UP      &kp   DOWN    &kp  RIGHT    &kp PG_DN
+&kp  LCTRL    &kp  LSHIFT   &kp  Cut      &kp  Copy     &kp  Paste    &kp  Undo     &kp Undo                                           &kp  Redo     &kp   F6      &kp  F7      &kp   F8      &kp   F9      &kp  F10      &kp RCTRL
                                                         &trans        &trans        &trans        &trans                 &trans        &trans        &trans        &trans 
                         >;
 			
