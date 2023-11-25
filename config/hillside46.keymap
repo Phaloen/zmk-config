@@ -38,7 +38,7 @@
     behaviors {
         gr_esc: grave_escape {
             compatible = "zmk,behavior-mod-morph";
-            label = "GR_ESC"
+            label = "GR_ESC";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp ESC>;
             mods = <(MOD_LCTRL|MOD_LALT|MOD_RCTRL|MOD_RALT)>;
@@ -59,7 +59,7 @@
                 default_layer {
 /* QWERTY
  * -------------------------------------------------------------------------------------------------------------------------------------
- * |  ESC  |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   |   Ü   |
+ * |  ^°   |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   |   Ü   |
  * |   ß   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   Ö   |   Ä   |
  * | CTRL  |   Y   |   X   |   C   |   V   |   B   | CTRL  |-------------------|  ALT  |   N   |   M   |   ,   |   .   |   -   | ENTER |
  *                                 |  GUI  | BKSPC |SK SHFT|  Nav  |---|  Sym  | SPACE |  Num  |  none |
