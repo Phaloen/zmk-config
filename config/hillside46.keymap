@@ -35,6 +35,24 @@
         };
     };
 
+    behaviors {
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_LALT|MOD_RGUI|MOD_RALT)>;
+        };
+        bspc_del: backspace_delete {
+            compatible = "zmk,behavior-mod-morph";
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -78,8 +96,8 @@
                 sym_layer {
 /* SYM
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   | BSPC  |
- * |       |   Ä   |   ß   |   Ü   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   | END   |
+ * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   |  DEL  |
+ * |       |   Ä   |   ß   |   Ü   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   |  END  |
  * | Ctrl  |   |   |   <   |   >   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
