@@ -120,8 +120,8 @@
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&kp  INS       &kp trans     &kp  DOLLAR   &kp RA(E)     &kp RA(N8)    &kp  BSLH                                                                      &kp  LPAR     &trans        &kp  PIPE     &kp  LS(N7)   &kp LS(EQUAL) &kp LS(N8)
-&tog RUSSIAN_L &kp trans     &kp PIPE      &kp RA(MINUS) &kp RA(N8)    &kp RA(N9)                                                                     &kp  RPAR     &kp LS(N7)    &trans        &kp  LS(N4)   &kp MINUS     &kp EQUAL
+&kp  INS       &trans        &kp  DOLLAR   &kp RA(E)     &kp RA(N8)    &kp  BSLH                                                                      &kp  LPAR     &trans        &kp  PIPE     &kp  LS(N7)   &kp LS(EQUAL) &kp LS(N8)
+&tog RUSSIAN_L &trans        &kp PIPE      &kp RA(MINUS) &kp RA(N8)    &kp RA(N9)                                                                     &kp  RPAR     &kp LS(N7)    &trans        &kp  LS(N4)   &kp MINUS     &kp EQUAL
 &trans         &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &kp LS(MINUS) &kp LS(MINUS)
                                                          &trans        &trans        &trans       &trans                   &trans       &trans        &trans        &trans
                         >;
