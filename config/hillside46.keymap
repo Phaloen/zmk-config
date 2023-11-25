@@ -66,10 +66,10 @@
  *  
  */
                         bindings = <
-&gr_esc    &kp  Q  &kp  W  &kp  E        &kp  R        &kp  T                                                                             &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P           &kp  LBKT
-&kp MINUS  &kp  A  &kp  S  &kp  D        &kp  F        &kp  G                                                                             &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI        &kp  SQT
-&kp LCTRL  &kp  Z  &kp  X  &kp  C        &kp  V        &kp  B        &kp  LCTRL                                             &kp  LALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &mt RCTRL SLASH  &kp  ENTER
-                                         &kp  LGUI     &bspc_del     &sk  LSHIFT    &mo  NAV_L        &lt  SYM_L  bspc_del  &kp  SPACE    &mo  NUMBER_L &none
+&gr_esc    &kp  Q  &kp  W  &kp  E        &kp  R        &kp  T                                                                         &kp  Y        &kp  U        &kp  I        &kp  O        &kp  P           &kp  LBKT
+&kp MINUS  &kp  A  &kp  S  &kp  D        &kp  F        &kp  G                                                                         &kp  H        &kp  J        &kp  K        &kp  L        &kp  SEMI        &kp  SQT
+&kp LCTRL  &kp  Z  &kp  X  &kp  C        &kp  V        &kp  B        &kp  LCTRL                                         &kp  LALT     &kp  N        &kp  M        &kp  COMMA    &kp  DOT      &mt RCTRL SLASH  &kp  ENTER
+                                         &kp  LGUI     &bspc_del     &sk  LSHIFT    &mo  NAV_L        &lt  SYM_L  BSPC  &kp  SPACE    &mo  NUMBER_L &none
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -102,10 +102,10 @@
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&kp  INS      &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  ASTRK    &kp  EXCL     &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
-&none         &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  LPAR     &kp  UNDER    &kp  AT       &kp  CARET    &kp  DOLLAR   &kp END
-&trans        &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
-                                                        &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
+&kp  INS       &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  ASTRK    &kp  EXCL     &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
+&tog RUSSIAN_L &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  LPAR     &kp  UNDER    &kp  AT       &kp  CARET    &kp  DOLLAR   &kp END
+&trans         &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
+                                                         &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -120,10 +120,10 @@
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&kp  INS      &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  LPAR     &trans        &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
-&none         &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  RPAR     &kp  UNDER    &trans        &kp  CARET    &kp  DOLLAR   &kp END
-&trans        &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
-                                                        &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
+&kp  INS       &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  LPAR     &trans        &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
+&tog RUSSIAN_L &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  RPAR     &kp  UNDER    &trans        &kp  CARET    &kp  DOLLAR   &kp END
+&trans         &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
+                                                         &trans        &trans        &trans       &mo  ADJ_L               &trans       &trans        &trans        &trans
                         >;
 			
                         sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -150,8 +150,8 @@
                 nav_layer {
 /* NAV   
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | Copy  |   1   |   2   |   3   |   4   |   5   |-----------------------------------|   6   |   7   |   8   |   9   |   0   | BSPC  |
- * | Cut   |  GUI  |  Alt  | Ctrl  | Shift | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
+ * | Copy  |   1   |   2   |  Up   |   4   |   5   |-----------------------------------|   6   |   7   |   8   |   9   |   0   | BSPC  |
+ * | Cut   |  GUI  |  Left |  Down | Right | Paste |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
  * | Ctrl  |  F1   |  F2   |  F3   |  F4   |  F5   |  UnDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Ctrl  |
  *                                 |       |       |       |       |---| ADJ_L |       |       |       |
  */
