@@ -97,13 +97,13 @@
 /* SYM
  * -------------------------------------------------------------------------------------------------------------------------------------
  * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   |  DEL  |
- * |       |   Ä   |   ß   |   Ü   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   |  END  |
+ * | RUS_L |   Ä   |   /   |   \   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   |  END  |
  * | Ctrl  |   |   |   <   |   >   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
 &kp  INS       &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  ASTRK    &kp  EXCL     &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
-&tog RUSSIAN_L &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  LPAR     &kp  UNDER    &kp  AT       &kp  CARET    &kp  DOLLAR   &kp END
+&tog RUSSIAN_L &kp  SQT      &kp LS(N7)    &kp RA(MINUS) &kp RA(N8)    &kp RA(N9)                                                                     &kp  LPAR     &kp  UNDER    &kp  AT       &kp  CARET    &kp  DOLLAR   &kp END
 &trans         &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
                                                          &trans        &trans        &trans       &trans                   &trans       &trans        &trans        &trans
                         >;
@@ -114,14 +114,14 @@
                 symr_layer {
 /* SYMBOLS RUSSIAN
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   %   |   §   | BSPC  |
- * |       |   Ъ   |   Х   |   Э   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   &   |   $   | END   |
+ * | INS   |   @   |   $   |   €   | Rubel |   #   |-----------------------------------|   (   |   !   |   '   |   :   |   %   |   №  |   
+ * | RUS_L |   Ъ   |   /   |   \   |   [   |   ]   |-----------------------------------|   )   |   ?   |   "   |   ;   |   _   | END   | 
  * | Ctrl  |   |   |   <   |   >   |   {   |   }   |SkAltGr|-------------------| MENU  | Mute  | Vol-  | Vol+  | Play  |       | Ctrl  |
  *                                 |       |       |       |  ADJ_L |---|      |       |       |       |
  */
                         bindings = <
-&kp  INS       &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  LPAR     &trans        &kp  PIPE     &kp  PERCENT  &kp  HASH     &kp DEL
-&tog RUSSIAN_L &kp  SQT      &kp  MINUS    &kp  LBKT     &kp RA(N8)    &kp RA(N9)                                                                     &kp  RPAR     &kp  UNDER    &trans        &kp  CARET    &kp  DOLLAR   &kp END
+&kp  INS       &kp RA(Q)     &kp  DOLLAR   &kp RA(E)     &none         &kp  BSLH                                                                      &kp  LPAR     &trans        &kp  PIPE     &kp  LS(N7)   &kp PERCENT   &kp HASH
+&tog RUSSIAN_L &kp SQT       &kp PIPE      &kp RA(MINUS) &kp RA(N8)    &kp RA(N9)                                                                     &kp  RPAR     &kp LS(N7)    &trans        &kp  LS(N4)   &kp LS(MINUS) &kp END
 &trans         &kp RA(NUBS)  &kp  NUBS     &kp LS(NUBS)  &kp RA(N7)    &kp RA(N0)    &sk  RALT                                          &kp K_APP     &kp  C_MUTE   &kp  C_VOL_DN &kp  C_VOL_UP &kp  C_PP     &none         &kp RCTRL
                                                          &trans        &trans        &trans       &trans                   &trans       &trans        &trans        &trans
                         >;
