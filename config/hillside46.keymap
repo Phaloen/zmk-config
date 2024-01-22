@@ -66,31 +66,18 @@
         compatible = "zmk,combos";
 
         Combo_DEL {
-            bindings = <&kp G>;
+            bindings = <&kp DEL>;
             key-positions = <16 15>;
-            layers = <0>;
         };
 
-        Combo_G {
-            bindings = <&kp G>;
+        Combo {
+            bindings = <&kp BSPC>;
             key-positions = <20 19>;
-            layers = <0>;
         };
 
-        Combo_soft {
-            bindings = <&kp COMMA>;
+        Combo_ENTER {
+            bindings = <&kp RET>;
             key-positions = <21 22>;
-            layers = <1>;
-        };
-
-        Combo_H {
-            bindings = <&kp H>;
-            key-positions = <19 35>;
-        };
-
-        Combo_L {
-            bindings = <&kp L>;
-            key-positions = <19 36>;
         };
     };
 
@@ -103,15 +90,15 @@
  * |  ESC  |   Q   |   W   |   E   |   R   |   T   |-----------------------------------|   Z   |   U   |   I   |   O   |   P   |   Ü   |
  * |   ß   |   A   |   S   |   D   |   F   |   G   |-----------------------------------|   H   |   J   |   K   |   L   |   Ö   |   Ä   |
  * | CTRL  |   Y   |   X   |   C   |   V   |   B   | none  |-------------------|  none |   N   |   M   |   ,   |   .   |   -   | ENTER |
- *                                 |  GUI  | BSPC  |SK SHFT|  Nav  |---| Sym - |  none |  none |  none |
+ *                                 |  GUI  | BSPC  |SK SHFT|  Nav  |---| Sym - | SPACE |  Num  |  none |
  *  
  */
 
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R     &kp T                                                   &none  &none  &none      &none  &none  &none
-&kp MINUS   &kp A  &kp S  &kp D  &kp F     &kp G                                                   &none  &kp N  &kp E      &kp R  &kp S  &none
-&trans      &kp Z  &kp X  &kp C  &kp V     &kp B            &none                           &none  &none  &kp A  &kp SPACE  &kp I  &kp O  &trans
-                                 &kp LGUI  &Bspc_Layer 2 0  &sk LSHIFT  &mo NAV_L    &none  &none  &none  &none
+&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R     &kp T                                                                 &kp Y         &kp U  &kp I      &kp O    &kp P            &kp LBKT
+&kp MINUS   &kp A  &kp S  &kp D  &kp F     &kp G                                                                 &kp H         &kp J  &kp K      &kp L    &kp SEMI         &kp SQT
+&trans      &kp Z  &kp X  &kp C  &kp V     &kp B            &none                                     &none      &kp N         &kp M  &kp COMMA  &kp DOT  &mt RCTRL SLASH  &trans
+                                 &kp LGUI  &Bspc_Layer 2 0  &sk LSHIFT  &mo NAV_L    &Bspc_Layer 5 0  &kp SPACE  &mo NUMBER_L  &none
             >;
 
             sensor-bindings =
@@ -195,10 +182,10 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        nav_layer {
+         nav_layer {
             /* NAV   
  * -------------------------------------------------------------------------------------------------------------------------------------
- * | Copy  |       | HOME  |  Up   |  END  |       |-----------------------------------|   6   |   7   |   8   |   9   |   0   | BSPC  |
+ * | Copy  |       | HOME  |  Up   |  END  |       |-----------------------------------|   6   |   7   |   8   |   9   |   0   |  Adj  |
  * | TAB   | CTRL  | Left  | Down  | Right | ReDo  |-----------------------------------| PG UP |  Left |  Up   |  Down | Right | PG DN |
  * | Ctrl  | SHIFT |  Cut  | Copy  | Paste | UnDo  |  ReDo |-------------------| ReDo  |  F6   |  F7   |  F8   |  F9   |  F10  | Ctrl  |
  *                                 |       |       |       |       |---| ADJ_L |       |       |       |
@@ -217,9 +204,9 @@
         adj_layer {
             /* ADJUST
  * -------------------------------------------------------------------------------------------------------------------------------------
- * |       | QWERTY|       |       |RUSSIAN|       |-----------------------------------|       |  F11  |  F12  |Prt Scr|EP_OFF | EP_ON |
+ * |       | QWERTY|       |       |RUSSIAN|       |-----------------------------------|OUT_USB|  F11  |  F12  |Prt Scr|EP_OFF | EP_ON |
  * | RESET | BT 0  | BT 1  | BT 2  | BT 3  | BT 4  |-----------------------------------|       |       |       |       |       | RESET |
- * |       | LGUI  | LALT  | LCTRL | LSHIFT|       |BT CLR |-------------------|       |       |       |OUT_USB|OUT_BLE|       | BOOTL |
+ * |       | LGUI  | LALT  | LCTRL | LSHIFT|       |BT CLR |-------------------|OUT_TOG|       |       |OUT_USB|OUT_BLE|       | BOOTL |
  *                                 |       |       |       |       |---|       |       |       |       |
  */
 
