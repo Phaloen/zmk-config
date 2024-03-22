@@ -80,17 +80,17 @@
             key-positions = <21 22>;
         };
 
-        Key_O {
+        Combo_O {
             bindings = <&kp U>;
             key-positions = <25 28>;
         };
 
-        Key_K {
+        Combo_K {
             bindings = <&kp K>;
             key-positions = <13 16>;
         };
 
-        Key_P {
+        Combo_P {
             bindings = <&kp P>;
             key-positions = <14 15>;
         };
